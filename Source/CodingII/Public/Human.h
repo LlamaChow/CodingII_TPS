@@ -23,7 +23,39 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+
+	//Actor Properties
+
+
 	UPROPERTY(EditAnywhere)
 		FString PlayerName = "Alex";
+
+	UPROPERTY(EditAnywhere)
+		int Speed = 10;
+
+	UPROPERTY(EditAnywhere)
+		int32 ElementalType = 0;
+
+	UPROPERTY(EditAnywhere)
+		FString Elements[4];
+
+	UPROPERTY(EditAnywhere)
+		float Health = 10;
+
+	UPROPERTY(EditAnywhere)
+		float Damage = 4;
+
+
+	//Actor Functions
+
+
+	UFUNCTION(BlueprintCallable)
+		void RandomizeHuman();
+
+	UFUNCTION(BlueprintCallable)
+		void TakeDamage(AHuman* attacker);
+
+	UFUNCTION(BlueprintCallable)
+		float DamageMultiplier(int32 GivenElemType);
 
 };

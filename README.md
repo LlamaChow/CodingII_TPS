@@ -10,3 +10,11 @@ The project is supposed to allow for the Human-Actor to randomize their element 
 The Human-Actor should also be able to take and recieve damage by this point in the project.
 
 LOG 0 4 3
+Updated the project to the point where it was supposed to be on 0 4 2
+The project is now built and has the common function that were made in class
+
+When time permits I will try to come back and implement enum changes.
+Using enums for the element types will allow for a few things
+From a qualitative standpoint multi-type variables which will create a more interesting experience
+However they also allow for switch case functions to be used when comparing damages which will please me greatly.
+
